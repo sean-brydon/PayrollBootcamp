@@ -18,7 +18,7 @@ public class Admin {
             case 1:
                 newEmployee();
             case 2:
-                viewEmployee();
+                viewEmployee(e);
             case 3:
                 newPayment();
             case 4:
@@ -51,7 +51,19 @@ public class Admin {
         Login.employees.add(new Employees(Login.employees.size()+1,fn,sn,pos,username,password,cHours,false));
     }
 
-    private void viewEmployee() {
+    private void viewEmployee(Employees e) {
+        int count = 0;
+        for (Employees employees: Login.employees) {
+            System.out.println(ConsoleColors.RED_BOLD+"---------User: "+employees.getEID()"-------------"+ConsoleColors.RESET);
+            System.out.println("Forname: "+ employees.getForename()+"\nSurname: " + employees.getSurname()+ "\nPosition: " +
+                    ""+ employees.getPosition() + "\nUsername: "+ employees.getUsername() + "\nPassword: " + employees.getPassword() +"" +
+                    "\nContracted Hours: " + employees.getContHours());
+
+
+            System.out.println(ConsoleColors.RED_BOLD+"-----------------------------------------"+ConsoleColors.RESET);
+
+        }
+
     }
 
     private void pendingPayments() {
