@@ -15,4 +15,8 @@ public class MainMenu {
          * View holiday requests
         *
         */
+
+        public MainMenu(e){
+
+        }
 }
