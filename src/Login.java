@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Login {
     //Checks username and password against Employees data.
     // Return a bool.
-    ArrayList<Employees> employees;
+    static ArrayList<Employees> employees;
     Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
