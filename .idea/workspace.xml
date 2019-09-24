@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65734be2-ec37-4505-8af0-435115a7d34c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Payroll/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Payroll/Admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Payroll/META-INF/Payroll.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin.java" afterDir="false" />
-    </list>
+    <list default="true" id="65734be2-ec37-4505-8af0-435115a7d34c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +72,7 @@
       <workItem from="1569233393625" duration="1116000" />
       <workItem from="1569234836109" duration="936000" />
       <workItem from="1569235837734" duration="11015000" />
+      <workItem from="1569269433722" duration="186000" />
     </task>
     <servers />
   </component>
