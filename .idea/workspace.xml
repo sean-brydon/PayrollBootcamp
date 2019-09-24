@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65734be2-ec37-4505-8af0-435115a7d34c" name="Default Changelist" comment="" />
+    <list default="true" id="65734be2-ec37-4505-8af0-435115a7d34c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Payroll/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Payroll/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Payroll/Employees.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Payroll/Employees.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Payroll/Holidays.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Payroll/Holidays.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Payroll/Init.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Payroll/Init.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Payroll/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Payroll/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Payroll/MainMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Payroll/MainMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Payroll/Payments.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Payroll/Payments.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Employees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Employees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Holidays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Holidays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Init.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Init.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Payments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Payments.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +48,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
@@ -72,7 +90,7 @@
       <workItem from="1569233393625" duration="1116000" />
       <workItem from="1569234836109" duration="936000" />
       <workItem from="1569235837734" duration="11015000" />
-      <workItem from="1569269433722" duration="186000" />
+      <workItem from="1569269433722" duration="16445000" />
     </task>
     <servers />
   </component>

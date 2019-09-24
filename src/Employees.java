@@ -36,14 +36,23 @@ public class Employees {
                 this.isAdmin = true;
                 break;
             case "MD":
-                rOfPay = 18.40;
+                rOfPay = 37.50;
                 this.isAdmin = true;
                 break;
             case "Developer":
                 rOfPay = 15.30;
+            case "Lead Developer":
+                rOfPay = 20.40;
+            case "Admin":
+                rOfPay = 16.50;
+            case "Cleaner":
+                rOfPay = 7.20;
+            case "Apprentice":
+                rOfPay = 6.80;
             default:
                 rOfPay = 9.50;
                 this.isAdmin = false;
+
         }
     }
         public int getEID () {
