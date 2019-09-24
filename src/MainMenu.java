@@ -1,3 +1,4 @@
+import java.text.ParseException;
 import java.util.Scanner;
 
 public class MainMenu {
@@ -20,13 +21,13 @@ public class MainMenu {
 
         Scanner scanner = new Scanner(System.in);
         Employees e;
-        public MainMenu(Employees e){
+        public MainMenu(Employees e) throws ParseException {
             this.e = e;
             openMenu(e);
         }
 
 
-    private void openMenu(Employees e) {
+    private void openMenu(Employees e) throws ParseException {
         if (e.isAdmin()){
             adminMenu(e);
         }else{
@@ -34,14 +35,14 @@ public class MainMenu {
         }
     }
 
-    private void adminMenu(Employees e) {
+    private void adminMenu(Employees e) throws ParseException {
         System.out.println(ConsoleColors.RED_BOLD+"----------"+ConsoleColors.RESET);
         System.out.println(ConsoleColors.RED_BOLD+"Admin Menu"+ConsoleColors.RESET);
         System.out.println(ConsoleColors.RED_BOLD+"----------"+ConsoleColors.RESET);
         System.out.println(ConsoleColors.RED_BOLD+"1)"+ConsoleColors.RESET + " Add New Employee");
         System.out.println(ConsoleColors.RED_BOLD+"2)"+ConsoleColors.RESET + " View List Of Employee's");
         System.out.println(ConsoleColors.RED_BOLD+"3)"+ConsoleColors.RESET + " Process A New Payment");
-        System.out.println(ConsoleColors.RED_BOLD+"4)"+ConsoleColors.RESET + " View and Edit Pending Payments");
+        System.out.println(ConsoleColors.RED_BOLD+"4)"+ConsoleColors.RESET + " View and Edit Payments");
         System.out.println(ConsoleColors.RED_BOLD+"5)"+ConsoleColors.RESET + " View and Edit Employee's");
         System.out.println(ConsoleColors.RED_BOLD+"6)"+ConsoleColors.RESET + " Holiday Requests");
         System.out.println(ConsoleColors.RED_BOLD+"7)"+ConsoleColors.RESET + " View Reports");
@@ -49,7 +50,7 @@ public class MainMenu {
         Admin admin = new Admin(e,aChoice);
     }
 
-    private void employeeMenu(Employees e) {
+    private void employeeMenu(Employees e) throws ParseException {
         System.out.println(ConsoleColors.GREEN_BOLD+"----------"+ConsoleColors.RESET);
         System.out.println(ConsoleColors.GREEN_BOLD+"Employee Menu"+ConsoleColors.RESET);
         System.out.println(ConsoleColors.GREEN_BOLD+"----------"+ConsoleColors.RESET);
@@ -59,6 +60,7 @@ public class MainMenu {
         System.out.println(ConsoleColors.GREEN_BOLD+"4)"+ConsoleColors.RESET + " Holiday Balance");
         System.out.println(ConsoleColors.GREEN_BOLD+"5)"+ConsoleColors.RESET + " View Holidays");
         System.out.println(ConsoleColors.GREEN_BOLD+"6)"+ConsoleColors.RESET + " Holiday Requests");
-
+        int bChoice = Integer.parseInt(scanner.nextLine());
+        User user = new User(e,bChoice);
     }
 }
