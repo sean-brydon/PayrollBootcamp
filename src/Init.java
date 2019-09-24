@@ -34,10 +34,10 @@ public class Init {
 //        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         ArrayList<Holidays> h = new ArrayList();
         Date d;
-        h.add(new Holidays(createDate("27/10/2019"),createDate("1/11/2019"),1,"Pending"));
-        h.add(new Holidays(createDate("27/09/2019"),createDate("2/10/2019"),2,"Pending"));
-        h.add(new Holidays(createDate("11/1/2019"),createDate("14/1/2019"),3,"Denied"));
-        h.add(new Holidays(createDate("1/2/2019"),createDate("5/2/2019"),3,"Accepted"));
+        h.add(new Holidays(createDate("27/10/2019"),createDate("1/11/2019"),1,"Pending",1));
+        h.add(new Holidays(createDate("27/09/2019"),createDate("2/10/2019"),2,"Pending",3));
+        h.add(new Holidays(createDate("11/1/2019"),createDate("14/1/2019"),3,"Denied",3));
+        h.add(new Holidays(createDate("1/2/2019"),createDate("5/2/2019"),3,"Accepted",4));
         return h;
     }
 

@@ -2,24 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27ec69a9-fb94-4778-bf70-ef23270d614d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Payroll/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Payroll/Admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Payroll/Employees.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Payroll/Employees.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Payroll/Holidays.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Payroll/Holidays.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Payroll/Init.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Payroll/Init.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Payroll/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Payroll/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Payroll/MainMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Payroll/MainMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Payroll/Payments.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Payroll/Payments.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Employees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Employees.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Holidays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Holidays.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Init.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Init.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Payments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Payments.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,33 +62,30 @@
     <configuration />
   </component>
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="27ec69a9-fb94-4778-bf70-ef23270d614d" name="Default Changelist" comment="" />
+      <created>1569348532078</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569348532078</updated>
+      <workItem from="1569348534517" duration="1548000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Admin.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Admin.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

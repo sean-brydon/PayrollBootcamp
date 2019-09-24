@@ -18,7 +18,7 @@ public class Payments
         for(Employees e: Login.employees){
             float netPay = e.getContHours() * (float)e.getrOfPay();
             float gPay;
-            gPay = netPay * (float)0.2;
+            gPay = netPay * (float)0.8;
             this.grossValue = gPay;
             this.netPay = netPay;
         }
