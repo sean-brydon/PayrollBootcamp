@@ -62,7 +62,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -101,7 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1569402197790</updated>
       <workItem from="1569402204710" duration="5593000" />
-      <workItem from="1569412973427" duration="1811000" />
+      <workItem from="1569412973427" duration="5993000" />
     </task>
     <servers />
   </component>

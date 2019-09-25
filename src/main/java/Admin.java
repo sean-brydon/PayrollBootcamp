@@ -158,6 +158,9 @@ public class Admin {
                         float cHours = Float.parseFloat(scanner.nextLine());
                         employees.setContHours(cHours);
                         break;
+                    case 7:
+                        Login l = new Login();
+                        l.login();
                     default:
                         System.out.println("Please enter a" + ConsoleColors.RED_BOLD + "Valid Selection " + ConsoleColors.RED_BOLD + "or type" + ConsoleColors.RED_BOLD + " exit " + ConsoleColors.RESET + "to exit the selection screen.");
                         String aDInput = scanner.nextLine();

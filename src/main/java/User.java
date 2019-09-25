@@ -36,6 +36,9 @@ public class User {
                 break;
             case 6:
                 yearToDate(e);
+            case 7:
+                Login l = new Login();
+                l.login();
         }
     }
 
@@ -67,7 +70,7 @@ public class User {
         }
 
     }
-        private void holidayReq (Employees e){
+        private void holidayReq (Employees e) throws ParseException {
             System.out.println("Please Enter the" + ConsoleColors.GREEN_BOLD + " date" + ConsoleColors.RESET + " you would like to create a holiday on" + ConsoleColors.GREEN_BOLD + " dd/MM/yyyy" + ConsoleColors.RESET);
             String startDate = scanner.nextLine();
             DateTime dStartDate = Init.createDate(startDate);
@@ -90,8 +93,13 @@ public class User {
                     e.setHolidayTime(hoursLeft);
                     Login.holidays.add(new Holidays(dStartDate, dEndDate, e.getEID(), "Pending", Login.holidays.size()));
                 } else {
-                    System.out.println("Start Date : " + ConsoleColors.GREEN_BOLD + h.getStartDate() + ConsoleColors.RESET + "\nEnd Date: " + ConsoleColors.RED_BOLD + h.getEndDate() + ConsoleColors.RESET + "\nHoliday ID: " + ConsoleColors.PURPLE_BOLD + h.getHID() + ConsoleColors.RESET);
-                }
+                    for (Holidays h : Login.holidays) {
+                        if(h.getEID()== e.getEID()){
+                            System.out.println("Start Date : " + ConsoleColors.GREEN_BOLD + h.getStartDate() + ConsoleColors.RESET + "\nEnd Date: " + ConsoleColors.RED_BOLD + h.getEndDate() + ConsoleColors.RESET + "\nHoliday ID: " + ConsoleColors.PURPLE_BOLD + h.getHID() + ConsoleColors.RESET);
+                        }
+                    }
+
+                }returnMenu(e);
             }
 
         }

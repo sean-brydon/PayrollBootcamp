@@ -24,7 +24,7 @@ public class Login {
         holidays = init.seedHolidays();
     }
 
-    private void login() throws ParseException {
+    public void login() throws ParseException {
         System.out.println("Please enter a username");
         String uname = scanner.nextLine();
         System.out.println("Please Enter a password for " + uname);

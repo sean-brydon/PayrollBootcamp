@@ -45,6 +45,7 @@ public class MainMenu {
         System.out.println(ConsoleColors.RED_BOLD+"4)"+ConsoleColors.RESET + " View and Edit Payments");
         System.out.println(ConsoleColors.RED_BOLD+"5)"+ConsoleColors.RESET + " View and Edit Employee's");
         System.out.println(ConsoleColors.RED_BOLD+"6)"+ConsoleColors.RESET + " Holiday Requests");
+        System.out.println(ConsoleColors.RED_BOLD+"6)"+ConsoleColors.RESET + " Logout");
 
         int aChoice = Integer.parseInt(scanner.nextLine());
         Admin admin = new Admin(e,aChoice);
@@ -60,6 +61,7 @@ public class MainMenu {
         System.out.println(ConsoleColors.GREEN_BOLD+"4)"+ConsoleColors.RESET + " View Holidays");
         System.out.println(ConsoleColors.GREEN_BOLD+"5)"+ConsoleColors.RESET + " Holiday Requests");
         System.out.println(ConsoleColors.GREEN_BOLD+"6)"+ConsoleColors.RESET + " Year-Date Summary");
+        System.out.println(ConsoleColors.GREEN_BOLD+"7)"+ConsoleColors.RESET + " Logout");
 
         int bChoice = Integer.parseInt(scanner.nextLine());
         User user = new User(e,bChoice);
