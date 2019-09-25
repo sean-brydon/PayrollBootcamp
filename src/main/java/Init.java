@@ -1,3 +1,7 @@
+import org.joda.time.DateTime;
+import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -27,6 +31,9 @@ public class Init {
         p.add(new Payments(3, createDate("1/09/2011"), 5));
         p.add(new Payments(3, createDate("12/03/2011"), 6));
         p.add(new Payments(3, createDate("12/12/2018"), 7));
+        p.add(new Payments(1, createDate("11/12/2020"), 8));
+        p.add(new Payments(2, createDate("12/4/2020"), 9));
+        p.add(new Payments(3, createDate("13/5/2020"), 10));
         return p;
     }
 
@@ -41,9 +48,12 @@ public class Init {
         return h;
     }
 
-    static public Date createDate(String date) throws ParseException {
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-        Date d = sdf.parse(date);
+    static public DateTime createDate(String date) {
+//        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+//        Date d = sdf.parse(date);
+//        return d;
+        DateTimeFormatter fmt = DateTimeFormat.forPattern("dd/MM/yyyy");
+        DateTime d = fmt.parseDateTime(date);
         return d;
     }
 

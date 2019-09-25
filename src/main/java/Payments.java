@@ -1,16 +1,17 @@
-import java.util.ArrayList;
-import java.util.Date;
+import org.joda.time.DateTime;
+
+
 
 public class Payments
 {
     //EID,  datePaymentWasMade, grossValuePayment.
     private int EID;
-    private Date datePayment;
+    private DateTime datePayment;
     private float grossValue;
     private int paymentID;
     private float netPay;
 
-    public Payments(int EID, Date datePayment,int paymentID) {
+    public Payments(int EID, DateTime datePayment,int paymentID) {
         this.EID = EID;
         this.datePayment = datePayment;
         this.paymentID = paymentID;
@@ -32,11 +33,11 @@ public class Payments
         this.EID = EID;
     }
 
-    public Date getDatePayment() {
+    public DateTime getDatePayment() {
         return datePayment;
     }
 
-    public void setDatePayment(Date datePayment) {
+    public void setDatePayment(DateTime datePayment) {
         this.datePayment = datePayment;
     }
 

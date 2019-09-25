@@ -1,7 +1,5 @@
-import com.sun.tools.javac.Main;
 
 import java.text.ParseException;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Admin {
@@ -37,9 +35,7 @@ public class Admin {
             case 6:
                 holidayRequests(e);
                 break;
-            case 7:
-                viewReports();
-                break;
+
             default:
                 MainMenu mm = new MainMenu(e);
         }
@@ -76,10 +72,7 @@ public class Admin {
         }
         System.out.println("Press " + ConsoleColors.RED_BOLD + "RETURN " + ConsoleColors.RESET + "to go back to the Admin Menu.");
         String anyKey = scanner.nextLine();
-        switch (anyKey) {
-            default:
-                MainMenu mm = new MainMenu(e);
-        }
+        MainMenu mm = new MainMenu(e);
     }
 
     private void viewPayments(Employees e) throws ParseException {
@@ -294,9 +287,7 @@ public class Admin {
         }
     }
 
-    private void viewReports() {
 
-    }
 
 
     private void returnMenu(Employees e) throws ParseException {

@@ -1,19 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
     <list default="true" id="65734be2-ec37-4505-8af0-435115a7d34c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-=======
-    <list default="true" id="27ec69a9-fb94-4778-bf70-ef23270d614d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_10_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Payroll/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Payroll/Admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Init.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Init.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Payments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Payments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
->>>>>>> 0749385660fffbd9525ece0cfa84335c60f206ef
+      <change beforePath="$PROJECT_DIR$/Payroll.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Payroll.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Payroll/Admin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Payroll/ConsoleColors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Payroll/Employees.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Payroll/Holidays.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Payroll/Init.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Payroll/Login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Payroll/MainMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Payroll/Payments.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Payroll/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Admin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ConsoleColors.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Employees.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Holidays.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Init.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Payments.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,21 +34,35 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="autoscrollToSource" value="true" />
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1RIJAL1ZQKGQWR1jq43uNQB39s2" />
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1RK3wDVGWBIgriSYHCl70p8KfH5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -68,20 +95,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="27ec69a9-fb94-4778-bf70-ef23270d614d" name="Default Changelist" comment="" />
-      <created>1569348532078</created>
+      <changelist id="65734be2-ec37-4505-8af0-435115a7d34c" name="Default Changelist" comment="" />
+      <created>1569402197790</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-<<<<<<< HEAD
-      <updated>1569233390532</updated>
-      <workItem from="1569233393625" duration="1116000" />
-      <workItem from="1569234836109" duration="936000" />
-      <workItem from="1569235837734" duration="11015000" />
-      <workItem from="1569269433722" duration="16762000" />
-=======
-      <updated>1569348532078</updated>
-      <workItem from="1569348534517" duration="1548000" />
->>>>>>> 0749385660fffbd9525ece0cfa84335c60f206ef
+      <updated>1569402197790</updated>
+      <workItem from="1569402204710" duration="5593000" />
+      <workItem from="1569412973427" duration="269000" />
     </task>
     <servers />
   </component>

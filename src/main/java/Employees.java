@@ -13,6 +13,7 @@ public class Employees {
     private boolean isAdmin = false;
     ArrayList<Holidays> hollidays;
     ArrayList<Payments> payments;
+    private float holidayTime;
 
 
     public Employees(int EID, String forename, String surname, String position, String username, String password, float contHours, boolean isAdmin) {
@@ -53,6 +54,13 @@ public class Employees {
                 rOfPay = 9.50;
                 this.isAdmin = false;
 
+        }
+        if(contHours < 10){
+            this.holidayTime = 8;
+        }else if(contHours >= 10 && contHours <=25){
+            this.holidayTime = 14;
+        }else if(contHours > 26){
+            this.holidayTime = 25;
         }
     }
         public int getEID () {
@@ -142,4 +150,12 @@ public class Employees {
         public void setAdmin ( boolean admin){
             isAdmin = admin;
         }
+
+    public float getHolidayTime() {
+        return holidayTime;
     }
+
+    public void setHolidayTime(float holidayTime) {
+        this.holidayTime = holidayTime;
+    }
+}
