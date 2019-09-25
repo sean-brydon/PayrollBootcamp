@@ -43,6 +43,7 @@ public class Login {
                 }
             }else if (counter == employees.size()){
                 System.out.println("Incorrect username and/or password.");
+                login();
             }
             counter++;
         }

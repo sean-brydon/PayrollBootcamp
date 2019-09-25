@@ -13,12 +13,14 @@ public class Holidays {
     private Date endDate;
     private int EID;
     String status;
+    private int HID;
 
-    public Holidays(Date startDate, Date endDate, int EID, String status) {
+    public Holidays(Date startDate, Date endDate, int EID, String status,int HID) {
         this.startDate = startDate;
         this.endDate = endDate;
         this.EID = EID;
         this.status = status;
+        this.HID = HID;
     }
 
     public Date getStartDate() {
@@ -51,5 +53,12 @@ public class Holidays {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public int getHID() {
+        return HID;
+    }
+    public void setHID(int HID) {
+        this.HID = HID;
     }
 }

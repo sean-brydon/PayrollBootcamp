@@ -59,7 +59,8 @@ public class Admin {
         System.out.println(ConsoleColors.RED + ">>" + ConsoleColors.RESET + "Please Enter the Employees Contracted Hours");
         float cHours = Float.parseFloat(scanner.nextLine());
         Login.employees.add(new Employees(Login.employees.size() + 1, fn, sn, pos, username, password, cHours, false));
-        MainMenu mm = new MainMenu(e);
+        returnMenu(e);
+
 
     }
 
@@ -70,7 +71,6 @@ public class Admin {
             System.out.println("Forname: " + employees.getForename() + "\nSurname: " + employees.getSurname() + "\nPosition: " +
                     "" + employees.getPosition() + "\nUsername: " + employees.getUsername() + "\nPassword: " + employees.getPassword() + "" +
                     "\nContracted Hours: " + employees.getContHours());
-
 
 
         }
@@ -111,7 +111,8 @@ public class Admin {
                         break;
                     }
                 }
-                MainMenu mm = new MainMenu(e);
+                returnMenu(e);
+
         }
 
     }
@@ -122,10 +123,10 @@ public class Admin {
         System.out.println("Please Enter the " + ConsoleColors.GREEN_BOLD + "EID" + ConsoleColors.RESET + " of the user you would like to edit.");
         int editEID = Integer.parseInt(scanner.nextLine());
         for (Employees employees : Login.employees) {
-            if(employees.getEID() == e.getEID()){
-                System.out.println(ConsoleColors.RED_BOLD+"You cannot edit your own details"+ConsoleColors.RESET);
+            if (employees.getEID() == e.getEID()) {
+                System.out.println(ConsoleColors.RED_BOLD + "You cannot edit your own details" + ConsoleColors.RESET);
 
-            }else if (employees.getEID() == editEID) {
+            } else if (employees.getEID() == editEID) {
                 System.out.println("You are now editing " + ConsoleColors.GREEN_BOLD + employees.getForename() + " " + employees.getSurname() + ConsoleColors.RESET + " information");
                 System.out.println("Please Select What attribute you want to edit");
                 System.out.println(ConsoleColors.RED + "1) " + ConsoleColors.RESET + "Forename");
@@ -214,60 +215,98 @@ public class Admin {
         int PID = Login.payments.size() + 1;
         System.out.println(ConsoleColors.RED + ">>" + ConsoleColors.RESET + "Please Enter the EID");
         int nEID = Integer.parseInt(scanner.nextLine());
-        if(nEID == e.getEID()){
+        if (nEID == e.getEID()) {
             System.out.println(ConsoleColors.RED_BOLD + "You cannot create a new payment for yourself");
-            MainMenu mm = new MainMenu(e);
-        }else{
+            returnMenu(e);
+
+
+        } else {
             System.out.println(ConsoleColors.RED + ">>" + ConsoleColors.RESET + "Please Enter the Date dd/MM/yyyy");
             String date = scanner.nextLine();
-            Login.payments.add(new Payments(nEID,Init.createDate(date),PID));
-            MainMenu mm = new MainMenu(e);
+            Login.payments.add(new Payments(nEID, Init.createDate(date), PID));
+            returnMenu(e);
         }
     }
 
-    private void holidayRequests(Employees e) {
-        String[] status = new String[] {"Accepted","Denied","Pending"};
+    private void holidayRequests(Employees e) throws ParseException {
         System.out.println(ConsoleColors.RED + "1) " + ConsoleColors.RESET + "View Accepted");
         System.out.println(ConsoleColors.RED + "2) " + ConsoleColors.RESET + "View Denied");
         System.out.println(ConsoleColors.RED + "3) " + ConsoleColors.RESET + "View Pending");
         int hChoice = Integer.parseInt(scanner.nextLine());
-        switch (hChoice){
+        switch (hChoice) {
             case 1:
             case 2:
             case 3:
-                for(Holidays holidays: Login.holidays){
-                    if(holidays.getStatus().equalsIgnoreCase("accepted") && hChoice == 1){
-                        for (Employees employees: Login.employees) {
+                for (Holidays holidays : Login.holidays) {
+                    if (holidays.getStatus().equalsIgnoreCase("accepted") && hChoice == 1) {
+                        for (Employees employees : Login.employees) {
                             if (holidays.getEID() == employees.getEID()) {
-                                System.out.println(ConsoleColors.RED_BOLD + "---------" + ConsoleColors.GREEN_BOLD +"User"+ holidays.getEID() + ConsoleColors.RED_BOLD + "-------------" + ConsoleColors.RESET);
-                                System.out.println("You are viewing the"+ConsoleColors.GREEN_BOLD+" Accepted "+ConsoleColors.RESET+ "holidays for the user " + ConsoleColors.GREEN_BOLD + employees.getForename()+" "+employees.getSurname());
-                                System.out.println("Start Date : "+ConsoleColors.GREEN_BOLD+holidays.getStartDate()+ConsoleColors.RESET+"\nEnd Date: "+ConsoleColors.RED_BOLD+holidays.getEndDate()+ConsoleColors.RESET);
+                                System.out.println(ConsoleColors.RED_BOLD + "---------" + ConsoleColors.GREEN_BOLD + "EID " + holidays.getEID() + ConsoleColors.RED_BOLD + "-------------" + ConsoleColors.RESET);
+                                System.out.println("You are viewing the" + ConsoleColors.GREEN_BOLD + " Accepted " + ConsoleColors.RESET + "holidays for the user " + ConsoleColors.GREEN_BOLD + employees.getForename() + " " + employees.getSurname()+ ConsoleColors.RESET);
+                                System.out.println("Start Date : " + ConsoleColors.GREEN_BOLD + holidays.getStartDate() + ConsoleColors.RESET + "\nEnd Date: " + ConsoleColors.RED_BOLD + holidays.getEndDate() + ConsoleColors.RESET + "\nHoliday ID: " + ConsoleColors.PURPLE_BOLD + holidays.getHID() + ConsoleColors.RESET);
                             }
                         }
-                    }else if(holidays.getStatus().equalsIgnoreCase("denied") && hChoice == 2){
-                        for (Employees employees: Login.employees) {
+                    } else if (holidays.getStatus().equalsIgnoreCase("denied") && hChoice == 2) {
+                        for (Employees employees : Login.employees) {
                             if (holidays.getEID() == employees.getEID()) {
-                                System.out.println(ConsoleColors.RED_BOLD + "---------" + ConsoleColors.GREEN_BOLD +"User"+ holidays.getEID() + ConsoleColors.RED_BOLD + "-------------" + ConsoleColors.RESET);
-                                System.out.println("You are viewing the"+ConsoleColors.RED_BOLD +" Denied "+ConsoleColors.RESET+ "holidays for the user " + ConsoleColors.GREEN_BOLD + employees.getForename()+" "+employees.getSurname());
-                                System.out.println("Start Date : "+ConsoleColors.GREEN_BOLD+holidays.getStartDate()+ConsoleColors.RESET+"\nEnd Date: "+ConsoleColors.RED_BOLD+holidays.getEndDate()+ConsoleColors.RESET);
+                                System.out.println(ConsoleColors.RED_BOLD + "---------" + ConsoleColors.GREEN_BOLD + "EID " + holidays.getEID() + ConsoleColors.RED_BOLD + "-------------" + ConsoleColors.RESET);
+                                System.out.println("You are viewing the" + ConsoleColors.RED_BOLD + " Denied " + ConsoleColors.RESET + "holidays for the user " + ConsoleColors.GREEN_BOLD + employees.getForename() + " " + employees.getSurname()+ ConsoleColors.RESET);
+                                System.out.println("Start Date : " + ConsoleColors.GREEN_BOLD + holidays.getStartDate() + ConsoleColors.RESET + "\nEnd Date: " + ConsoleColors.RED_BOLD + holidays.getEndDate() + ConsoleColors.RESET + "\nHoliday ID: " + ConsoleColors.PURPLE_BOLD + holidays.getHID() + ConsoleColors.RESET);
                             }
                         }
-                    }else if(holidays.getStatus().equalsIgnoreCase("Pending")&& hChoice ==3){
-                        for (Employees employees: Login.employees) {
+                    } else if (holidays.getStatus().equalsIgnoreCase("Pending") && hChoice == 3) {
+                        for (Employees employees : Login.employees) {
                             if (holidays.getEID() == employees.getEID()) {
-                                System.out.println(ConsoleColors.RED_BOLD + "---------" + ConsoleColors.GREEN_BOLD +"User"+ holidays.getEID() + ConsoleColors.RED_BOLD + "-------------" + ConsoleColors.RESET);
-                                System.out.println("You are viewing the"+ConsoleColors.YELLOW_BOLD+" Pending "+ConsoleColors.RESET+ "holidays for the user " + ConsoleColors.GREEN_BOLD + employees.getForename()+" "+employees.getSurname());
-                                System.out.println("Start Date : "+ConsoleColors.GREEN_BOLD+holidays.getStartDate()+ConsoleColors.RESET+"\nEnd Date: "+ConsoleColors.RED_BOLD+holidays.getEndDate()+ConsoleColors.RESET);
+                                System.out.println(ConsoleColors.RED_BOLD + "---------" + ConsoleColors.GREEN_BOLD + "EID " + holidays.getEID() + ConsoleColors.RED_BOLD + "-------------" + ConsoleColors.RESET);
+                                System.out.println("You are viewing the" + ConsoleColors.YELLOW_BOLD + " Pending " + ConsoleColors.RESET + "holidays for the user " + ConsoleColors.GREEN_BOLD + employees.getForename() + " " + employees.getSurname()+ ConsoleColors.RESET);
+                                System.out.println("Start Date : " + ConsoleColors.GREEN_BOLD + holidays.getStartDate() + ConsoleColors.RESET + "\nEnd Date: " + ConsoleColors.RED_BOLD + holidays.getEndDate() + ConsoleColors.RESET + "\nHoliday ID: " + ConsoleColors.PURPLE_BOLD + holidays.getHID() + ConsoleColors.RESET);
+
                             }
                         }
                     }
                 }
+                returnMenu(e);
+
+            default:
+                System.out.println(ConsoleColors.RED_BOLD + "Please enter a Correct Option" + ConsoleColors.RESET);
+                holidayRequests(e);
+        }
+        System.out.println("Would you like to " + ConsoleColors.GREEN_BOLD + "edit " + ConsoleColors.RESET + "or " + ConsoleColors.RED_BOLD + "delete " + ConsoleColors.RESET + "a holiday?");
+        String hEditChoice = scanner.nextLine();
+        if (hEditChoice.equalsIgnoreCase("edit")) {
+            System.out.println("Please enter the" + ConsoleColors.RED_BOLD + "HID " + ConsoleColors.RESET + "you would like to edit");
+            int eHID = Integer.parseInt(scanner.nextLine());
+            for (Holidays holidays : Login.holidays) {
+                if (holidays.getHID() == eHID) {
+                    String[] status = new String[]{"Accepted", "Denied", "Pending"};
+                    System.out.println("Please select an option");
+                    System.out.println(ConsoleColors.RED + "1) " + ConsoleColors.RESET + "Status: " + ConsoleColors.GREEN_BOLD + "Accepted");
+                    System.out.println(ConsoleColors.RED + "2) " + ConsoleColors.RESET + "Status: " + ConsoleColors.RED_BOLD + " Denied");
+                    System.out.println(ConsoleColors.RED + "3) " + ConsoleColors.RESET + "Status: " + ConsoleColors.YELLOW_BOLD + " Pending");
+                    int statusInput = Integer.parseInt(scanner.nextLine());
+                    holidays.setStatus(status[statusInput - 1]);
+                    System.out.println("Setting Status of " + ConsoleColors.GREEN_BOLD + "HID: " + holidays.getHID() + ConsoleColors.RESET + "to" + status[statusInput - 1]);
+                    break;
+                }
+            }
+            returnMenu(e);
+
         }
     }
-
 
     private void viewReports() {
 
     }
 
+
+    private void returnMenu(Employees e) throws ParseException {
+        System.out.println("Type" + ConsoleColors.RED_BOLD + " exit " + ConsoleColors.RESET + "to exit to the main menu.");
+        String choice = scanner.nextLine();
+        if (choice.equalsIgnoreCase("exit")) {
+            MainMenu mm = new MainMenu(e);
+        } else {
+            System.exit(0);
+        }
+
+    }
 }

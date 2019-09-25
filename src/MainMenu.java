@@ -50,7 +50,7 @@ public class MainMenu {
         Admin admin = new Admin(e,aChoice);
     }
 
-    private void employeeMenu(Employees e) {
+    private void employeeMenu(Employees e) throws ParseException {
         System.out.println(ConsoleColors.GREEN_BOLD+"----------"+ConsoleColors.RESET);
         System.out.println(ConsoleColors.GREEN_BOLD+"Employee Menu"+ConsoleColors.RESET);
         System.out.println(ConsoleColors.GREEN_BOLD+"----------"+ConsoleColors.RESET);
@@ -60,6 +60,7 @@ public class MainMenu {
         System.out.println(ConsoleColors.GREEN_BOLD+"4)"+ConsoleColors.RESET + " Holiday Balance");
         System.out.println(ConsoleColors.GREEN_BOLD+"5)"+ConsoleColors.RESET + " View Holidays");
         System.out.println(ConsoleColors.GREEN_BOLD+"6)"+ConsoleColors.RESET + " Holiday Requests");
-
+        int bChoice = Integer.parseInt(scanner.nextLine());
+        User user = new User(e,bChoice);
     }
 }
